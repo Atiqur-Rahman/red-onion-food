@@ -1,8 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import FirstHeader from './Shared/Header/FirstHeader/FirstHeader';
 
 function App() {
-    return <div className="App"></div>;
+    return (
+        <div>
+            <FirstHeader></FirstHeader>
+        </div>
+    );
 }
 
 export default App;
