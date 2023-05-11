@@ -1,0 +1,22 @@
+.background {
+    background-image: url('../../../images/bannerbackground.png');
+    background-size: 109% 100%;
+    background-repeat: no-repeat;
+    background-position: left 62% top;
+    height: 708px;
+    /* min-height: 504px;
+    max-height: 708px; */
+}
+
+.search {
+    position: relative;
+    height: 50px;
+    width: 600px;
+}
+
+.search button {
+    position: absolute;
+    right: 0;
+    height: 50px;
+    background: blue;
+}

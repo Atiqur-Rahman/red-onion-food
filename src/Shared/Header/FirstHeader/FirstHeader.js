@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../../images/logo2.png';
@@ -5,7 +7,7 @@ import logo from '../../../images/logo2.png';
 const FirstHeader = () => {
     return (
         <div>
-            <Navbar collapseOnSelect bg="light" expand="lg">
+            <Navbar collapseOnSelect bg="white" expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img style={{ width: '140px' }} src={logo} alt="" />
@@ -13,9 +15,13 @@ const FirstHeader = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link href="#memes">Login</Nav.Link>
-                            <Button variant="danger" className="rounded-pill px-5">
+                            <Nav.Link className="d-flex align-items-center" href="/cart">
+                                <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                            </Nav.Link>
+                            <Nav.Link className="ms-4" href="/login">
+                                Login
+                            </Nav.Link>
+                            <Button variant="danger" className="rounded-pill px-4 ms-4" style={{ backgroundColor: 'red' }}>
                                 Sign up
                             </Button>
                         </Nav>
