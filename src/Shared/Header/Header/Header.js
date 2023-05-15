@@ -3,13 +3,14 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../../images/logo2.png';
+import { Link } from 'react-router-dom';
 
-const FirstHeader = () => {
+const Header = () => {
     return (
         <div>
             <Navbar collapseOnSelect bg="white" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand as={Link} to="/home">
                         <img style={{ width: '140px' }} src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -32,4 +33,4 @@ const FirstHeader = () => {
     );
 };
 
-export default FirstHeader;
+export default Header;

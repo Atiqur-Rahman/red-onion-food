@@ -1,15 +1,21 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import BannerBg from './Pages/Home/BannerBg/BannerBg';
-
-import FirstHeader from './Shared/Header/FirstHeader/FirstHeader';
-import SecondHeader from './Shared/Header/SecondHeader/SecondHeader';
+import Header from './Shared/Header/Header/Header';
+import Home from './Pages/Home/Home/Home';
+import LaunchMenu from './Pages/Home/LaunchMenu/LaunchMenu';
 
 function App() {
     return (
         <div>
-            <FirstHeader></FirstHeader>
-            <BannerBg></BannerBg>
-            <SecondHeader></SecondHeader>
+            <Header></Header>
+            <Routes>
+                <Route path="/home" element={<Home></Home>}></Route>
+                <Route path="/" element={<Home></Home>}>
+                    <Route path="breakfast" element={<p>This is breakfast</p>}></Route>
+                    <Route path="launch" element={<LaunchMenu></LaunchMenu>}></Route>
+                    <Route path="dinner" element={<p>This is dinner</p>}></Route>
+                </Route>
+            </Routes>
         </div>
     );
 }
