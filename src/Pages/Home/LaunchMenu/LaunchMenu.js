@@ -1,22 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import Launch from '../Launch/Launch';
+import React from 'react';
+import './LaunchMenu.css';
+import { useNavigate } from 'react-router-dom';
+import useLaunchx from '../../../hooks/useLaunch';
 
 const LaunchMenu = () => {
-    const [launchMenu, setLaunchMenu] = useState([]);
+    const [launchMenu] = useLaunchx();
+    const navigate = useNavigate();
 
-    useEffect(() => {
-        fetch('launch.json')
-            .then((res) => res.json())
-            .then((data) => setLaunchMenu(data));
-    }, []);
+    console.log('launchmenu', launchMenu);
 
-    console.log(launchMenu);
     return (
         <div className="container">
             <div className="launch-container">
-                {launchMenu.map((launch) => (
-                    <Launch key={launch.id} launch={launch}></Launch>
-                ))}
+                {launchMenu.map((launch) => {
+                    return (
+                        <div onClick={() => navigate('/launch/' + launch.id)} className="text-center box">
+                            <div>
+                                <img className="mt-4" style={{ width: '250px' }} src={launch.img} alt="" />
+                                <h6 className="mt-4">{launch.name}</h6>
+                                <h5>${launch.price}</h5>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );

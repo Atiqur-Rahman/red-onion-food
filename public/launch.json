@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "name": "launch1",
-        "price": "",
-        "description": "",
+        "name": "Carne Asada Fries",
+        "price": "11.50",
+        "description": "Originating from San Diego, California, this American-Mexican fusion dish consists of shoestring fries topped with carne asada, cheese (often Cotija cheese), guacamole, and sour cream. The sour cream and guacamole should be on separate sides of the container so that they don't mix.",
         "img": "https://i.ibb.co/ChKZcgF/lunch1.png"
     },
     {
         "id": 2,
-        "name": "launch2",
-        "price": "",
-        "description": "",
+        "name": "Amish Chicken",
+        "price": "12.99",
+        "description": "Amish chicken is a traditional American poultry dish. It is made with a combination of chicken, flour, garlic powder, heavy cream, paprika, water, salt, and pepper. The chicken is dredged in flour and seasonings, and it is then covered with a combination of cream and water.",
         "img": "https://i.ibb.co/sPyxyHn/lunch2.png"
     },
     {
         "id": 3,
-        "name": "launch3",
-        "price": "",
-        "description": "",
+        "name": "Navajo Tacos",
+        "price": "18.99",
+        "description": "Navajo tacos, Indian tacos, or frybread tacos is a traditional American dish originating from the Midwest and Intermountain region states such as Arizona, South Dakota, and Oklahoma. These tacos are made with Indian fry bread that's topped with a combination of ingredients such as ground beef, beans, shredded lettuce, cheddar cheese, sour cream, and tomatoes.",
         "img": "https://i.ibb.co/gRSswFD/lunch3.png"
     },
     {
         "id": 4,
-        "name": "launch4",
-        "price": "",
-        "description": "",
+        "name": "Plate Lunch",
+        "price": "21.99",
+        "description": "Plate lunch is an original, traditional Hawaiian dish consisting of two large scoops of white rice, macaroni salad that is heavy on the mayonnaise, and one meat-based entrée. If a plate has more than one entrée, it is then called a mixed plate.",
         "img": "https://i.ibb.co/8b8GVbL/lunch4.png"
     },
     {
         "id": 5,
-        "name": "launch5",
-        "price": "",
-        "description": "",
+        "name": "Chicken Fried Rice",
+        "price": "24.99",
+        "description": "Chicken fried rice is the comfort dish of Chinese food. It's been around for a very long time and is also common in East, Southeast, and South Asian cuisines. The dish started as way to use leftover fried rice that has dried out some and may not be great on its own, but is still perfectly edible.",
         "img": "https://i.ibb.co/yFfgTgf/lunch5.png"
     },
     {
         "id": 6,
-        "name": "launch6",
-        "price": "",
-        "description": "",
+        "name": "California Burrito",
+        "price": "17.99",
+        "description": "California burrito is the specialty of San Diego, which is also the place where it was invented. It was originally made as a way to feed the city's hungry surfers, because there is a dominant beach culture in San Diego. The burrito usually consists of a flour tortilla stuffed with carne asada, large amounts of cheese, french fries, sour cream, and guacamole.",
         "img": "https://i.ibb.co/q9NNFth/lunch6.png"
     }
 ]
