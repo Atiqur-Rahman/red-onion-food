@@ -1,10 +1,11 @@
 import { faCartShopping, faMinus, faPlus, faPlusMinus, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Launch = () => {
     const { launchId } = useParams();
+    const navigate = useNavigate();
 
     const [quantity, setQuantity] = useState(1);
 
@@ -109,7 +110,7 @@ const Launch = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <button className="border border-1 rounded-pill text-white" style={{ height: '5vh', width: '13vh', backgroundColor: 'red' }}>
+                                <button onClick={() => navigate(`/cart`)} className="border border-1 rounded-pill text-white" style={{ height: '5vh', width: '13vh', backgroundColor: 'red' }}>
                                     <FontAwesomeIcon className="pe-2" icon={faCartShopping}></FontAwesomeIcon>
                                     Add
                                 </button>
