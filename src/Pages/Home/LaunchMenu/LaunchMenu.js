@@ -7,8 +7,6 @@ const LaunchMenu = () => {
     const [launchMenu] = useLaunchx();
     const navigate = useNavigate();
 
-    console.log('launchmenu', launchMenu);
-
     return (
         <div className="container">
             <div className="launch-container">

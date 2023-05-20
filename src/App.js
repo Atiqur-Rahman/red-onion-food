@@ -6,6 +6,7 @@ import LaunchMenu from './Pages/Home/LaunchMenu/LaunchMenu';
 import Launch from './Pages/Home/Launch/Launch';
 import SecondHeader from './Pages/Home/Shared/SecondHeader/SecondHeader';
 import Cart from './Pages/Cart/Cart';
+import BreakfastMenu from './Pages/Home/BreakfastMenu/BreakfastMenu';
 
 function App() {
     return (
@@ -13,7 +14,7 @@ function App() {
             <Header></Header>
             <Routes>
                 <Route path="/" element={<Home></Home>}>
-                    <Route path="/breakfast" element={<p>This is breakfast</p>}></Route>
+                    <Route path="/breakfast" element={<BreakfastMenu></BreakfastMenu>}></Route>
                     <Route path="/launch" element={<LaunchMenu></LaunchMenu>}></Route>
                     {/* <Route path="/dinner" element={<Launch></Launch>}></Route> */}
                 </Route>
