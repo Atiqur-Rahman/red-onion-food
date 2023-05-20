@@ -1,6 +1,7 @@
 import React from 'react';
 import useBreakfast from '../../../hooks/useBreakfast';
 import { useNavigate } from 'react-router-dom';
+import './BreakfastMenu.css';
 
 const BreakfastMenu = () => {
     const [breakfastMenu] = useBreakfast();

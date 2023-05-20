@@ -1,4 +1,4 @@
-import { faCartShopping, faMinus, faPlus, faPlusMinus, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -80,7 +80,7 @@ const Launch = () => {
     // }, []);
 
     // console.log(launchItems);
-    console.log(typeof parseInt(launchId));
+    // console.log(typeof parseInt(launchId));
 
     const launch = launchItems.filter((item) => item.id === parseInt(launchId));
     console.log(launch);
