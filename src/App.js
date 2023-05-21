@@ -8,6 +8,10 @@ import SecondHeader from './Pages/Home/Shared/SecondHeader/SecondHeader';
 import Cart from './Pages/Cart/Cart';
 import BreakfastMenu from './Pages/Home/BreakfastMenu/BreakfastMenu';
 import Breakfast from './Pages/Home/Breakfast/Breakfast';
+import DinnerMenu from './Pages/Home/DinnerMenu/DinnerMenu';
+import Dinner from './Pages/Home/Dinner/Dinner';
+import Signup from './Pages/Signup/Signup';
+import Login from './Pages/Login/Login';
 
 function App() {
     return (
@@ -17,11 +21,15 @@ function App() {
                 <Route path="/" element={<Home></Home>}>
                     <Route path="/breakfast" element={<BreakfastMenu></BreakfastMenu>}></Route>
                     <Route path="/launch" element={<LaunchMenu></LaunchMenu>}></Route>
+                    <Route path="/dinner" element={<DinnerMenu></DinnerMenu>}></Route>
                     {/* <Route path="/dinner" element={<Launch></Launch>}></Route> */}
                 </Route>
+                <Route path="/cart" element={<Cart></Cart>}></Route>
+                <Route path="/signup" element={<Signup></Signup>}></Route>
+                <Route path="/login" element={<Login></Login>}></Route>
                 <Route path="/launch/:launchId" element={<Launch></Launch>}></Route>
                 <Route path="/breakfast/:breakfastId" element={<Breakfast></Breakfast>}></Route>
-                <Route path="/cart" element={<Cart></Cart>}></Route>
+                <Route path="/dinner/:dinnerId" element={<Dinner></Dinner>}></Route>
             </Routes>
         </div>
     );

@@ -1,0 +1,16 @@
+.dinner-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 80px;
+    margin-top: 10px;
+}
+.box {
+    /* width: 270px; */
+    height: 370px;
+    /* display: flex;
+    align-items: center; */
+    cursor: pointer;
+}
+.box:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

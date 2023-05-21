@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "name": "dinner1",
-        "price": "",
-        "description": "",
+        "name": "Tetrazzini",
+        "price": "18.99",
+        "description": "Tetrazzini is an American dish consisting of pasta tossed with diced poultry or seafood in a creamy parmesan cheese sauce. Some cooks like to add steamed peas, mushrooms, or carrots to the dish in order to enhance its flavors even further. The dish is often baked as a casserole and garnished with almonds or parsley.",
         "img": "https://i.ibb.co/8NnbGtG/dinner1.png"
     },
     {
         "id": 2,
-        "name": "dinner2",
-        "price": "",
-        "description": "",
+        "name": "Amish Chicken",
+        "price": "14.99",
+        "description": "Amish chicken is a traditional American poultry dish. It is made with a combination of chicken, flour, garlic powder, heavy cream, paprika, water, salt, and pepper. The chicken is dredged in flour and seasonings, and it is then covered with a combination of cream and water.",
         "img": "https://i.ibb.co/QQBjwnd/dinner2.png"
     },
     {
         "id": 3,
-        "name": "dinner3",
-        "price": "",
-        "description": "",
+        "name": "Carne Asada Burrito",
+        "price": "21.99",
+        "description": "Carne asada burrito is a type of burrito that originates from San Diego. The dish consists of a large flour tortilla topped with carne asada meat, pico de gallo, and guacamole. The carne asada parts is made with a combination of beef (skirt or flank steak), lemon juice, lime juice, salt, pepper, and onions.",
         "img": "https://i.ibb.co/30tPdWS/dinner3.png"
     },
     {
         "id": 4,
-        "name": "dinner4",
-        "price": "",
-        "description": "",
+        "name": "Navajo Tacos",
+        "price": "15.99",
+        "description": "Navajo tacos, Indian tacos, or frybread tacos is a traditional American dish originating from the Midwest and Intermountain region states such as Arizona, South Dakota, and Oklahoma. These tacos are made with Indian fry bread that's topped with a combination of ingredients such as ground beef, beans, shredded lettuce, cheddar cheese, sour cream, and tomatoes.",
         "img": "https://i.ibb.co/hRRGf0J/dinner4.png"
     },
     {
         "id": 5,
-        "name": "dinner5",
-        "price": "",
-        "description": "",
+        "name": "Tuna Tartare",
+        "price": "16.99",
+        "description": "Tuna tartare is an elegant starter originating from Los Angeles. The dish is made with a combination of raw tuna, avocado, egg yolks, green peppercorns, capers, chives, tarragon, mustard, olive oil, lemon juice, salt, and pepper. It was invented in 1984 by chef Shigefumi Tachibe at the Chaya Brasserie when a few customers came in wanting beef tartare.",
         "img": "https://i.ibb.co/B3Y0YfF/dinner5.png"
     },
     {
         "id": 6,
-        "name": "dinner6",
-        "price": "",
-        "description": "",
+        "name": "Loco Moco",
+        "price": "11.99",
+        "description": "Loco moco is Hawaii's popular comfort food, most often consisting of sticky rice at the bottom, topped with a hamburger patty, a fried egg, and the thick gravy that is poured on top of the whole combination, although there are numerous variations using bacon, ham, chicken, oysters, and shrimp.",
         "img": "https://i.ibb.co/Y295p3x/dinner6.png"
     }
 ]

@@ -82,7 +82,7 @@ const Breakfast = () => {
                                 <p style={{ lineHeight: '36px', fontSize: '18px' }}>{breakfast[0].description}</p>
                                 <div className="d-flex align-items-center mb-4">
                                     <h2 className="pe-4">${breakfast[0].price}</h2>
-                                    <div className="border border-1 rounded-pill" style={{ height: '5vh', width: '13vh' }}>
+                                    <div className="border border-1 rounded-pill" style={{ height: '48px', width: '125px' }}>
                                         <div className="d-flex justify-content-evenly align-items-center mt-2">
                                             <button style={{ background: 'none', border: 'none' }}>
                                                 <FontAwesomeIcon onClick={handleDecrement} icon={faMinus}></FontAwesomeIcon>
@@ -94,7 +94,7 @@ const Breakfast = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <button onClick={() => navigate(`/cart`)} className="border border-1 rounded-pill text-white" style={{ height: '5vh', width: '13vh', backgroundColor: 'red' }}>
+                                <button onClick={() => navigate(`/cart`)} className="border border-1 rounded-pill text-white" style={{ height: '48px', width: '125px', backgroundColor: 'red' }}>
                                     <FontAwesomeIcon className="pe-2" icon={faCartShopping}></FontAwesomeIcon>
                                     Add
                                 </button>

@@ -16,15 +16,16 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link className="d-flex align-items-center" href="/cart">
+                            <Nav.Link className="d-flex align-items-center" as={Link} to="/cart">
                                 <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                             </Nav.Link>
-                            <Nav.Link className="ms-4" href="/login">
+                            <Nav.Link className="ms-4" as={Link} to="/login">
                                 Login
                             </Nav.Link>
-                            <Button variant="danger" className="rounded-pill px-4 ms-4" style={{ backgroundColor: 'red' }}>
+
+                            <Nav.Link as={Link} to="/signup" variant="danger" className="rounded-pill px-4 ms-4 text-white" style={{ backgroundColor: 'red' }}>
                                 Sign up
-                            </Button>
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
