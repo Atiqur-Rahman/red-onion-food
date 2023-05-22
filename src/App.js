@@ -10,8 +10,10 @@ import BreakfastMenu from './Pages/Home/BreakfastMenu/BreakfastMenu';
 import Breakfast from './Pages/Home/Breakfast/Breakfast';
 import DinnerMenu from './Pages/Home/DinnerMenu/DinnerMenu';
 import Dinner from './Pages/Home/Dinner/Dinner';
-import Signup from './Pages/Signup/Signup';
-import Login from './Pages/Login/Login';
+import Signup from './Pages/Login/Signup/Signup';
+import Login from './Pages/Login/Login/Login';
+import OrderComplete from './Pages/OrderComplete/OrderComplete';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 function App() {
     return (
@@ -25,6 +27,14 @@ function App() {
                     {/* <Route path="/dinner" element={<Launch></Launch>}></Route> */}
                 </Route>
                 <Route path="/cart" element={<Cart></Cart>}></Route>
+                <Route
+                    path="/ordercomplete"
+                    element={
+                        <RequireAuth>
+                            <OrderComplete />
+                        </RequireAuth>
+                    }
+                ></Route>
                 <Route path="/signup" element={<Signup></Signup>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
                 <Route path="/launch/:launchId" element={<Launch></Launch>}></Route>

@@ -4,8 +4,17 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../../images/logo2.png';
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import { signOut } from 'firebase/auth';
+import Loading from '../../Loading/Loading';
 
 const Header = () => {
+    const [user, loading] = useAuthState(auth);
+
+    if (loading) {
+        return <Loading></Loading>;
+    }
     return (
         <div>
             <Navbar collapseOnSelect bg="white" expand="lg">
@@ -19,13 +28,25 @@ const Header = () => {
                             <Nav.Link className="d-flex align-items-center" as={Link} to="/cart">
                                 <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                             </Nav.Link>
-                            <Nav.Link className="ms-4" as={Link} to="/login">
-                                Login
-                            </Nav.Link>
 
-                            <Nav.Link as={Link} to="/signup" variant="danger" className="rounded-pill px-4 ms-4 text-white" style={{ backgroundColor: 'red' }}>
-                                Sign up
-                            </Nav.Link>
+                            {user ? (
+                                <div className="ps-4 fs-5" style={{ color: 'red' }}>
+                                    {user.displayName}
+                                </div>
+                            ) : (
+                                <Nav.Link className="px-4 ms-4" as={Link} to="/login">
+                                    Login
+                                </Nav.Link>
+                            )}
+                            {user ? (
+                                <button onClick={() => signOut(auth)} className="border border-0 rounded-pill px-4 ms-2 text-white" style={{ backgroundColor: 'red' }}>
+                                    Sign Out
+                                </button>
+                            ) : (
+                                <Nav.Link as={Link} to="/signup" variant="danger" className="rounded-pill px-4 ms-4 text-white" style={{ backgroundColor: 'red' }}>
+                                    Sign up
+                                </Nav.Link>
+                            )}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
