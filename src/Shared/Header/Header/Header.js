@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../../images/logo2.png';
 import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -31,7 +31,7 @@ const Header = () => {
 
                             {user ? (
                                 <div className="ps-4 fs-5" style={{ color: 'red' }}>
-                                    {user.displayName}
+                                    {!user.displayName ? 'no_name' : user?.displayName}
                                 </div>
                             ) : (
                                 <Nav.Link className="px-4 ms-4" as={Link} to="/login">
