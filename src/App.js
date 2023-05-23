@@ -14,6 +14,7 @@ import Signup from './Pages/Login/Signup/Signup';
 import Login from './Pages/Login/Login/Login';
 import OrderComplete from './Pages/OrderComplete/OrderComplete';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import NotFound from './Shared/NotFound/NotFound';
 
 function App() {
     return (
@@ -37,6 +38,7 @@ function App() {
                 ></Route>
                 <Route path="/signup" element={<Signup></Signup>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
+                <Route path="*" element={<NotFound></NotFound>}></Route>
                 <Route path="/launch/:launchId" element={<Launch></Launch>}></Route>
                 <Route path="/breakfast/:breakfastId" element={<Breakfast></Breakfast>}></Route>
                 <Route path="/dinner/:dinnerId" element={<Dinner></Dinner>}></Route>
